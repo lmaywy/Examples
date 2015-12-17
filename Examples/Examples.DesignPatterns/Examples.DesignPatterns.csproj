@@ -40,8 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Obeserver\IBMStock.cs" />
     <Compile Include="Obeserver\IObserver.cs" />
+    <Compile Include="Obeserver\ObserverPatternDemo.cs" />
     <Compile Include="Obeserver\Stock.cs" />
+    <Compile Include="Obeserver\TongHuaShunApp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
