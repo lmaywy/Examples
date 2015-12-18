@@ -47,10 +47,6 @@
     <Compile Include="Obeserver\Stock.cs" />
     <Compile Include="Obeserver\TongHuaShunApp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Singleton\SafeThreadSingleton.cs" />
-    <Compile Include="Singleton\SimpleSingleton.cs" />
-    <Compile Include="Singleton\SingletonPatternDemo.cs" />
-    <Compile Include="Singleton\StaticSingleton.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Obeserver\1450407673678.gif" />
