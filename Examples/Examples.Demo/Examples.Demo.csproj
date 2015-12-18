@@ -4,15 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0DA06825-0DF6-4910-A3A5-3AB6CD7AFEF0}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{5C954525-AD43-4ABF-9D87-769CDC613913}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Examples.DesignPatterns</RootNamespace>
-    <AssemblyName>Examples.DesignPatterns</AssemblyName>
+    <RootNamespace>Examples.Demo</RootNamespace>
+    <AssemblyName>Examples.Demo</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -40,13 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Obeserver\EmcStock.cs" />
-    <Compile Include="Obeserver\IBMStock.cs" />
-    <Compile Include="Obeserver\IObserver.cs" />
-    <Compile Include="Obeserver\ObserverPatternDemo.cs" />
-    <Compile Include="Obeserver\Stock.cs" />
-    <Compile Include="Obeserver\TongHuaShunApp.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Examples.DesignPatterns\Examples.DesignPatterns.csproj">
+      <Project>{0da06825-0df6-4910-a3a5-3ab6cd7afef0}</Project>
+      <Name>Examples.DesignPatterns</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
