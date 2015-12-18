@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples.DesignPatterns", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples.Demo", "Examples.Demo\Examples.Demo.csproj", "{5C954525-AD43-4ABF-9D87-769CDC613913}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples.Algorithm", "Examples.Algorithm\Examples.Algorithm.csproj", "{BBFC4ACA-6420-4CB0-92BC-FE8DA38D9523}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{5C954525-AD43-4ABF-9D87-769CDC613913}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C954525-AD43-4ABF-9D87-769CDC613913}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C954525-AD43-4ABF-9D87-769CDC613913}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBFC4ACA-6420-4CB0-92BC-FE8DA38D9523}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBFC4ACA-6420-4CB0-92BC-FE8DA38D9523}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBFC4ACA-6420-4CB0-92BC-FE8DA38D9523}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBFC4ACA-6420-4CB0-92BC-FE8DA38D9523}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
