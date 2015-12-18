@@ -171,3 +171,5 @@ $RECYCLE.BIN/
 /database/database.sql
 /database/undo.sql
 /utility/EloquaTestTool
+/Examples/Examples.Demo/bin/Debug
+/Examples/.vs/Examples/v14/.suo
