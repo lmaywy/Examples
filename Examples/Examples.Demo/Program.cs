@@ -1,6 +1,6 @@
 ﻿using System;
 using Examples.DesignPatterns.Obeserver;
-//using Examples.DesignPatterns.Singleton;
+using Examples.DesignPatterns.Singleton;
 
 namespace Examples.Demo
 {
@@ -10,7 +10,7 @@ namespace Examples.Demo
         {
             Console.WriteLine("-----------------Desing Patterns Demo Start----------------");
             ObserverPatternDemo.Demo();
-            //SingletonPatternDemo.SimpleSingletonDemo(); 
+            SingletonPatternDemo.SimpleSingletonDemo(); 
             Console.WriteLine("------------- ----Desing Patterns Demo End-----------------");
             Console.Read();
         }
