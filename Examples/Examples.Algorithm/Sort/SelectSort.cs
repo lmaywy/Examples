@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Examples.DesignPatterns
+namespace Examples.Algorithm.Sort
 {
-    public class Class1
+    class SelectSort
     {
     }
 }
