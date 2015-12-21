@@ -173,3 +173,6 @@ $RECYCLE.BIN/
 /utility/EloquaTestTool
 /Examples/Examples.Demo/bin/Debug
 /Examples/.vs/Examples/v14/.suo
+
+bin/
+obj/

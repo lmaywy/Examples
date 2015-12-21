@@ -40,6 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Decorator\DatabaseLog.cs" />
+    <Compile Include="Decorator\DecoratorDemo.cs" />
+    <Compile Include="Decorator\ILog.cs" />
+    <Compile Include="Decorator\LogErrorWrapper.cs" />
+    <Compile Include="Decorator\LogPriorityWarpper.cs" />
+    <Compile Include="Decorator\LogWrapper.cs" />
+    <Compile Include="Decorator\TextFileLog.cs" />
     <Compile Include="Obeserver\EmcStock.cs" />
     <Compile Include="Obeserver\IBMStock.cs" />
     <Compile Include="Obeserver\IObserver.cs" />
@@ -53,7 +60,10 @@
     <Compile Include="Singleton\StaticSingleton.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Obeserver\1450407673678.gif" />
+    <Content Include="Decorator\imgs\decorator pattern structure.gif" />
+    <Content Include="Decorator\imgs\decorator demo structure.jpg" />
+    <Content Include="Obeserver\obeserver pattern structure.gif" />
+    <Content Include="Singleton\Singleton pattern structure.JPG" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
