@@ -50,6 +50,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Examples.Algorithm\Examples.Algorithm.csproj">
+      <Project>{bbfc4aca-6420-4cb0-92bc-fe8da38d9523}</Project>
+      <Name>Examples.Algorithm</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Examples.DesignPatterns\Examples.DesignPatterns.csproj">
       <Project>{0da06825-0df6-4910-a3a5-3ab6cd7afef0}</Project>
       <Name>Examples.DesignPatterns</Name>
