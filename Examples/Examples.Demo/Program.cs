@@ -5,6 +5,7 @@ using Examples.DesignPatterns.Singleton;
 using System.Collections.Generic;
 using System.Linq;
 using Examples.Algorithm;
+using Examples.DesignPatterns.Factory;
 
 namespace Examples.Demo
 {
@@ -16,6 +17,7 @@ namespace Examples.Demo
             ObserverPatternDemo.Demo();
             SingletonPatternDemo.SimpleSingletonDemo();
             DecoratorDemo.Demo();
+            FactoryDemo.Demo();
             Console.WriteLine("------------------Desing Patterns Demo End-----------------");
             var result = Pailie("abcd");
 

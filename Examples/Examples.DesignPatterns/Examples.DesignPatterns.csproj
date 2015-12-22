@@ -47,6 +47,13 @@
     <Compile Include="Decorator\LogPriorityWarpper.cs" />
     <Compile Include="Decorator\LogWrapper.cs" />
     <Compile Include="Decorator\TextFileLog.cs" />
+    <Compile Include="Factory\FactoryDemo.cs" />
+    <Compile Include="Factory\DatabaseFactory.cs" />
+    <Compile Include="Factory\DatabaseLog.cs" />
+    <Compile Include="Factory\FileFactory.cs" />
+    <Compile Include="Factory\FileLog.cs" />
+    <Compile Include="Factory\Log.cs" />
+    <Compile Include="Factory\ILogFactory.cs" />
     <Compile Include="Obeserver\EmcStock.cs" />
     <Compile Include="Obeserver\IBMStock.cs" />
     <Compile Include="Obeserver\IObserver.cs" />
@@ -65,7 +72,12 @@
     <Content Include="Obeserver\obeserver pattern structure.gif" />
     <Content Include="Singleton\Singleton pattern structure.JPG" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Prototype\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
