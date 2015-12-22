@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Examples.Algorithm;
 using Examples.DesignPatterns.Factory;
+using Examples.Algorithm.Sort;
 
 namespace Examples.Demo
 {
@@ -24,6 +25,8 @@ namespace Examples.Demo
             Console.WriteLine("--------------------Algorithm Demo Start-------------------");
             BubbleSort.Sort(new int[] { 1, 3, 7, 9, 8, 4, 8, 5, 6 }, "desc");
             BubbleSort.Sort(new int[] { 1, 3, 7, 9, 8, 4, 8, 5, 6 }, "asc");
+            SelectSort.Sort(new int[] { 1, 3, 7, 9, 8, 4, 8, 5, 6 }, "desc");
+            SelectSort.Sort(new int[] { 1, 3, 7, 9, 8, 4, 8, 5, 6 }, "asc");
             Console.WriteLine("---------------------Algorithm Demo End--------------------");
 
             Console.Read();
