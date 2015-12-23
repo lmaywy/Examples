@@ -18,8 +18,9 @@ namespace Examples.DesignPatterns.Factory
             Console.WriteLine("---------Factory Pattern Demo start-------");
 
             //var factory=new FileFactory(); 
-            var assemblyName = Assembly.GetAssembly(typeof(ILogFactory)).FullName;
-            var factory = (ILogFactory)Assembly.Load(assemblyName).CreateInstance(factoryName);
+            //var assemblyName = Assembly.GetAssembly(typeof(ILogFactory)).FullName;
+            //var factory = (ILogFactory)Assembly.Load(assemblyName).CreateInstance(factoryName);
+            var factory = (ILogFactory)Activator.CreateInstance(Type.GetType(factoryName)); 
             var log = factory.Create();
             log.Write("logging test info");
             Console.WriteLine("---------Factory Pattern Demo end-------\n");
