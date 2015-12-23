@@ -7,6 +7,7 @@ using System.Linq;
 using Examples.Algorithm;
 using Examples.DesignPatterns.Factory;
 using Examples.Algorithm.Sort;
+using Examples.FrameworkClassLibrary.Reflection;
 
 namespace Examples.Demo
 {
@@ -28,6 +29,10 @@ namespace Examples.Demo
             SelectSort.Sort(new int[] { 1, 3, 7, 9, 8, 4, 8, 5, 6 }, "desc");
             SelectSort.Sort(new int[] { 1, 3, 7, 9, 8, 4, 8, 5, 6 }, "asc");
             Console.WriteLine("---------------------Algorithm Demo End--------------------");
+
+            Console.WriteLine("----------.Net Framework class library Demo start------------");
+            TypeDemo.Demo();
+            Console.WriteLine("----------.Net Framework class library Demo End--------------");
 
             Console.Read();
 
