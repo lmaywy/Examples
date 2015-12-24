@@ -41,6 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractFactory\AbstractFactoryDemo.cs" />
+    <Compile Include="AbstractFactory\USABonus.cs" />
+    <Compile Include="AbstractFactory\ChineseBonus.cs" />
+    <Compile Include="AbstractFactory\USATax.cs" />
+    <Compile Include="AbstractFactory\ChineseTax.cs" />
+    <Compile Include="AbstractFactory\IBonus.cs" />
+    <Compile Include="AbstractFactory\ITax.cs" />
+    <Compile Include="AbstractFactory\Salary.cs" />
+    <Compile Include="AbstractFactory\SalaryFactory.cs" />
     <Compile Include="Decorator\DatabaseLog.cs" />
     <Compile Include="Decorator\DecoratorDemo.cs" />
     <Compile Include="Decorator\ILog.cs" />
@@ -68,8 +77,10 @@
     <Compile Include="Singleton\StaticSingleton.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AbstractFactory\abstract factory stucture.jpg" />
     <Content Include="Decorator\imgs\decorator pattern structure.gif" />
     <Content Include="Decorator\imgs\decorator demo structure.jpg" />
+    <Content Include="Factory\factory structure.jpg" />
     <Content Include="Obeserver\obeserver pattern structure.gif" />
     <Content Include="Singleton\Singleton pattern structure.JPG" />
   </ItemGroup>
