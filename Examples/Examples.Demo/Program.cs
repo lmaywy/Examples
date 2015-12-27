@@ -9,6 +9,7 @@ using Examples.DesignPatterns.Factory;
 using Examples.Algorithm.Sort;
 using Examples.DesignPatterns.AbstractFactory;
 using Examples.FrameworkClassLibrary.Reflection;
+using Examples.DesignPatterns.Prototype;
 
 namespace Examples.Demo
 {
@@ -22,6 +23,7 @@ namespace Examples.Demo
             DecoratorDemo.Demo();
             FactoryDemo.Demo();
             AbstractFactoryDemo.Demo();
+            PrototypeDemo.Demo();
             Console.WriteLine("------------------Desing Patterns Demo End-----------------");
             var result = Pailie("abcd");
 
