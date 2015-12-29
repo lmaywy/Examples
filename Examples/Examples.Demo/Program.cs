@@ -12,6 +12,7 @@ using Examples.DesignPatterns.Bridge;
 using Examples.FrameworkClassLibrary.Reflection;
 using Examples.DesignPatterns.Prototype;
 using Examples.FrameworkClassLibrary.Indexers;
+using Examples.FrameworkClassLibrary.Comparison;
 
 namespace Examples.Demo
 {
@@ -40,6 +41,7 @@ namespace Examples.Demo
             Console.WriteLine("----------.Net Framework class library Demo start------------");
             TypeDemo.Demo();
             IndexersDemo.Demo();
+            ComparisonDemo.Demo();
             Console.WriteLine("----------.Net Framework class library Demo End--------------");
 
             Console.Read();
