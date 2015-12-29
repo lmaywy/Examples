@@ -50,6 +50,11 @@
     <Compile Include="AbstractFactory\ITax.cs" />
     <Compile Include="AbstractFactory\Salary.cs" />
     <Compile Include="AbstractFactory\SalaryFactory.cs" />
+    <Compile Include="Bridge\BridgeDemo.cs" />
+    <Compile Include="Bridge\DatabaseLog.cs" />
+    <Compile Include="Bridge\Log.cs" />
+    <Compile Include="Bridge\LogImpl.cs" />
+    <Compile Include="Bridge\TextLog.cs" />
     <Compile Include="Decorator\DatabaseLog.cs" />
     <Compile Include="Decorator\DecoratorDemo.cs" />
     <Compile Include="Decorator\ILog.cs" />
@@ -82,10 +87,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AbstractFactory\abstract factory stucture.jpg" />
+    <Content Include="Bridge\Bridge-Pattern-Structure.jpg" />
     <Content Include="Decorator\imgs\decorator pattern structure.gif" />
     <Content Include="Decorator\imgs\decorator demo structure.jpg" />
     <Content Include="Factory\factory structure.jpg" />
     <Content Include="Obeserver\obeserver pattern structure.gif" />
+    <Content Include="Prototype\Prototype-Pattern-Structure.jpg" />
     <Content Include="Singleton\Singleton pattern structure.JPG" />
   </ItemGroup>
   <ItemGroup />
