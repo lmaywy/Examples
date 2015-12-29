@@ -40,6 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Indexers\IndexersDemo.cs" />
+    <Compile Include="Indexers\ISample.cs" />
+    <Compile Include="Indexers\Sample.cs" />
+    <Compile Include="Indexers\SampleCollection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reflection\Sample.cs" />
     <Compile Include="Reflection\TypeDemo.cs" />

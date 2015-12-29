@@ -10,6 +10,7 @@ using Examples.Algorithm.Sort;
 using Examples.DesignPatterns.AbstractFactory;
 using Examples.FrameworkClassLibrary.Reflection;
 using Examples.DesignPatterns.Prototype;
+using Examples.FrameworkClassLibrary.Indexers;
 
 namespace Examples.Demo
 {
@@ -36,6 +37,7 @@ namespace Examples.Demo
 
             Console.WriteLine("----------.Net Framework class library Demo start------------");
             TypeDemo.Demo();
+            IndexersDemo.Demo();
             Console.WriteLine("----------.Net Framework class library Demo End--------------");
 
             Console.Read();
