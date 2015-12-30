@@ -13,6 +13,7 @@ using Examples.FrameworkClassLibrary.Reflection;
 using Examples.DesignPatterns.Prototype;
 using Examples.FrameworkClassLibrary.Indexers;
 using Examples.FrameworkClassLibrary.Comparison;
+using Examples.FrameworkClassLibrary.Dictionary;
 
 namespace Examples.Demo
 {
@@ -42,6 +43,7 @@ namespace Examples.Demo
             TypeDemo.Demo();
             IndexersDemo.Demo();
             ComparisonDemo.Demo();
+            DictionaryDemo.Demo();
             Console.WriteLine("----------.Net Framework class library Demo End--------------");
 
             Console.Read();

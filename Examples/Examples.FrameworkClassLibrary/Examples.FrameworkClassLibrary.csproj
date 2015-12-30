@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Comparison\ComparisonDemo.cs" />
+    <Compile Include="Dictionary\DictionaryDemo.cs" />
     <Compile Include="Indexers\IndexersDemo.cs" />
     <Compile Include="Indexers\ISample.cs" />
     <Compile Include="Indexers\Sample.cs" />
@@ -49,6 +50,7 @@
     <Compile Include="Reflection\Sample.cs" />
     <Compile Include="Reflection\TypeDemo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
