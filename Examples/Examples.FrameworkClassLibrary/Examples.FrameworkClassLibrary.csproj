@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5C954525-AD43-4ABF-9D87-769CDC613913}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{8BDAE4AC-1C84-433B-9765-89883C86BC73}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Examples.Demo</RootNamespace>
-    <AssemblyName>Examples.Demo</AssemblyName>
+    <RootNamespace>Examples.FrameworkClassLibrary</RootNamespace>
+    <AssemblyName>Examples.FrameworkClassLibrary</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,26 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Comparison\ComparisonDemo.cs" />
+    <Compile Include="Dictionary\DictionaryDemo.cs" />
+    <Compile Include="Indexers\IndexersDemo.cs" />
+    <Compile Include="Indexers\ISample.cs" />
+    <Compile Include="Indexers\Sample.cs" />
+    <Compile Include="Indexers\SampleCollection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reflection\Sample.cs" />
+    <Compile Include="Reflection\TypeDemo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Examples.Algorithm\Examples.Algorithm.csproj">
-      <Project>{bbfc4aca-6420-4cb0-92bc-fe8da38d9523}</Project>
-      <Name>Examples.Algorithm</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Examples.DesignPatterns\Examples.DesignPatterns.csproj">
-      <Project>{0da06825-0df6-4910-a3a5-3ab6cd7afef0}</Project>
-      <Name>Examples.DesignPatterns</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Examples.FrameworkClassLibrary\Examples.FrameworkClassLibrary.csproj">
-      <Project>{8bdae4ac-1c84-433b-9765-89883c86bc73}</Project>
-      <Name>Examples.FrameworkClassLibrary</Name>
-    </ProjectReference>
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
