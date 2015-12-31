@@ -95,7 +95,9 @@
     <Content Include="Prototype\Prototype-Pattern-Structure.jpg" />
     <Content Include="Singleton\Singleton pattern structure.JPG" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Builder\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

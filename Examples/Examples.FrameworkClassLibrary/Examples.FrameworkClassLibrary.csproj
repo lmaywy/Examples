@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Comparison\ComparisonDemo.cs" />
     <Compile Include="Dictionary\DictionaryDemo.cs" />
+    <Compile Include="Hashtable\HashtableDemo.cs" />
     <Compile Include="Indexers\IndexersDemo.cs" />
     <Compile Include="Indexers\ISample.cs" />
     <Compile Include="Indexers\Sample.cs" />

@@ -14,6 +14,7 @@ using Examples.DesignPatterns.Prototype;
 using Examples.FrameworkClassLibrary.Indexers;
 using Examples.FrameworkClassLibrary.Comparison;
 using Examples.FrameworkClassLibrary.Dictionary;
+using Examples.FrameworkClassLibrary.Hashtable;
 
 namespace Examples.Demo
 {
@@ -44,6 +45,7 @@ namespace Examples.Demo
             IndexersDemo.Demo();
             ComparisonDemo.Demo();
             DictionaryDemo.Demo();
+            HashtableDemo.Demo();
             Console.WriteLine("----------.Net Framework class library Demo End--------------");
 
             Console.Read();
