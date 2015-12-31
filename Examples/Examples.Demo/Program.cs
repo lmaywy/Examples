@@ -3,6 +3,7 @@ using Examples.DesignPatterns.Decorator;
 using Examples.DesignPatterns.Obeserver;
 using Examples.DesignPatterns.Singleton;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using Examples.Algorithm;
 using Examples.DesignPatterns.Factory;
@@ -46,6 +47,9 @@ namespace Examples.Demo
             ComparisonDemo.Demo();
             DictionaryDemo.Demo();
             HashtableDemo.Demo();
+
+            var date = DateTime.ParseExact("05/13/2015", "MM/dd/yyyy", CultureInfo.CurrentCulture);
+
             Console.WriteLine("----------.Net Framework class library Demo End--------------");
 
             Console.Read();

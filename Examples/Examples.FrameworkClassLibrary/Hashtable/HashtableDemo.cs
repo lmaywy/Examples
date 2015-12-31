@@ -12,7 +12,7 @@ namespace Examples.FrameworkClassLibrary.Hashtable
     {
         public static void Demo()
         {
-            /*
+            /*Scr33n21
             It returns null if we try to find a key which does not exist.
             It is slower than dictionary because it requires boxing and unboxing.
             All the members in a Hashtable are thread safe,
