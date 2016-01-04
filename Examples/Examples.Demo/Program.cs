@@ -14,8 +14,10 @@ using Examples.FrameworkClassLibrary.Reflection;
 using Examples.DesignPatterns.Prototype;
 using Examples.FrameworkClassLibrary.Indexers;
 using Examples.FrameworkClassLibrary.Comparison;
+using Examples.FrameworkClassLibrary.DateTimeEg;
 using Examples.FrameworkClassLibrary.Dictionary;
 using Examples.FrameworkClassLibrary.Hashtable;
+using Examples.FrameworkClassLibrary.Struct;
 
 namespace Examples.Demo
 {
@@ -49,7 +51,9 @@ namespace Examples.Demo
             DictionaryDemo.Demo();
             HashtableDemo.Demo();
 
-        
+            DateTimeDemo.Demo();
+
+            StructDemo.Demo();
 
             Console.WriteLine("----------.Net Framework class library Demo End--------------");
 

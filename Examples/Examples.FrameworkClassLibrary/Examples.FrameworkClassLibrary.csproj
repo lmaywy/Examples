@@ -51,6 +51,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reflection\Sample.cs" />
     <Compile Include="Reflection\TypeDemo.cs" />
+    <Compile Include="Struct\Point.cs" />
+    <Compile Include="Struct\StructDemo.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
