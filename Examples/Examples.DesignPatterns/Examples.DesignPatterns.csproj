@@ -55,6 +55,12 @@
     <Compile Include="Bridge\Log.cs" />
     <Compile Include="Bridge\LogImpl.cs" />
     <Compile Include="Bridge\TextLog.cs" />
+    <Compile Include="Builder\BuilderDemo.cs" />
+    <Compile Include="Builder\Food.cs" />
+    <Compile Include="Builder\FoodBuilder.cs" />
+    <Compile Include="Builder\FoodManager.cs" />
+    <Compile Include="Builder\GoldenBuilder.cs" />
+    <Compile Include="Builder\NormalBuilder.cs" />
     <Compile Include="Decorator\DatabaseLog.cs" />
     <Compile Include="Decorator\DecoratorDemo.cs" />
     <Compile Include="Decorator\ILog.cs" />
@@ -88,6 +94,7 @@
   <ItemGroup>
     <Content Include="AbstractFactory\abstract factory stucture.jpg" />
     <Content Include="Bridge\Bridge-Pattern-Structure.jpg" />
+    <Content Include="Builder\Builder Pattern Structure.jpg" />
     <Content Include="Decorator\imgs\decorator pattern structure.gif" />
     <Content Include="Decorator\imgs\decorator demo structure.jpg" />
     <Content Include="Factory\factory structure.jpg" />
@@ -95,9 +102,7 @@
     <Content Include="Prototype\Prototype-Pattern-Structure.jpg" />
     <Content Include="Singleton\Singleton pattern structure.JPG" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Builder\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

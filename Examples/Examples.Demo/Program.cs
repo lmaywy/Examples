@@ -3,13 +3,13 @@ using Examples.DesignPatterns.Decorator;
 using Examples.DesignPatterns.Obeserver;
 using Examples.DesignPatterns.Singleton;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
 using Examples.Algorithm;
 using Examples.DesignPatterns.Factory;
 using Examples.Algorithm.Sort;
 using Examples.DesignPatterns.AbstractFactory;
 using Examples.DesignPatterns.Bridge;
+using Examples.DesignPatterns.Builder;
 using Examples.FrameworkClassLibrary.Reflection;
 using Examples.DesignPatterns.Prototype;
 using Examples.FrameworkClassLibrary.Indexers;
@@ -29,6 +29,7 @@ namespace Examples.Demo
             DecoratorDemo.Demo();
             FactoryDemo.Demo();
             AbstractFactoryDemo.Demo();
+            BuilderDemo.Demo();
             PrototypeDemo.Demo();
             BridgeDemo.Demo();
             Console.WriteLine("------------------Desing Patterns Demo End-----------------");
@@ -48,7 +49,7 @@ namespace Examples.Demo
             DictionaryDemo.Demo();
             HashtableDemo.Demo();
 
-            var date = DateTime.ParseExact("05/13/2015", "MM/dd/yyyy", CultureInfo.CurrentCulture);
+        
 
             Console.WriteLine("----------.Net Framework class library Demo End--------------");
 
