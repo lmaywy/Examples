@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples.FrameworkClassLibr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples.WcfService", "Examples.WcfService\Examples.WcfService.csproj", "{9E5D58A9-FFEA-498D-8A6E-47F1443DCFCE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples.EntityFramework", "Examples.EntityFramework\Examples.EntityFramework.csproj", "{D1327AA8-80CB-4598-A7CB-5DA5C05C73B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{9E5D58A9-FFEA-498D-8A6E-47F1443DCFCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E5D58A9-FFEA-498D-8A6E-47F1443DCFCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E5D58A9-FFEA-498D-8A6E-47F1443DCFCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1327AA8-80CB-4598-A7CB-5DA5C05C73B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1327AA8-80CB-4598-A7CB-5DA5C05C73B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1327AA8-80CB-4598-A7CB-5DA5C05C73B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1327AA8-80CB-4598-A7CB-5DA5C05C73B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

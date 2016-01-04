@@ -12,6 +12,7 @@ using Examples.DesignPatterns.Bridge;
 using Examples.DesignPatterns.Builder;
 using Examples.FrameworkClassLibrary.Reflection;
 using Examples.DesignPatterns.Prototype;
+using Examples.EntityFramework.CodeFirstDemoForNewDB;
 using Examples.FrameworkClassLibrary.Indexers;
 using Examples.FrameworkClassLibrary.Comparison;
 using Examples.FrameworkClassLibrary.DateTimeEg;
@@ -50,12 +51,13 @@ namespace Examples.Demo
             ComparisonDemo.Demo();
             DictionaryDemo.Demo();
             HashtableDemo.Demo();
-
             DateTimeDemo.Demo();
-
             StructDemo.Demo();
-
             Console.WriteLine("----------.Net Framework class library Demo End--------------");
+
+            Console.WriteLine("----------Entity Framework start------------");
+            BloggingDemo.Demo();
+            Console.WriteLine("----------Entity Framework end------------");
 
             Console.Read();
 
