@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Examples.DesignPatterns.Adapter
+﻿namespace Examples.DesignPatterns.Adapter
 {
-    public class LogAdpater : ILogTarget
+    public class LogAdpater : ILogTarget  //对象适配器
     {
         private readonly LogAdaptee _adaptee;
 
@@ -20,4 +14,6 @@ namespace Examples.DesignPatterns.Adapter
             _adaptee.WriteLog(message);
         }
     }
+
+
 }
