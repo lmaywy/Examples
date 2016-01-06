@@ -50,6 +50,10 @@
     <Compile Include="AbstractFactory\ITax.cs" />
     <Compile Include="AbstractFactory\Salary.cs" />
     <Compile Include="AbstractFactory\SalaryFactory.cs" />
+    <Compile Include="Adapter\AdpaterDemo.cs" />
+    <Compile Include="Adapter\ILogTarget.cs" />
+    <Compile Include="Adapter\LogAdaptee.cs" />
+    <Compile Include="Adapter\LogAdpater.cs" />
     <Compile Include="Bridge\BridgeDemo.cs" />
     <Compile Include="Bridge\DatabaseLog.cs" />
     <Compile Include="Bridge\Log.cs" />
