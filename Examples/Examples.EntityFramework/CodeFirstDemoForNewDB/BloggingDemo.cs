@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Examples.EntityFramework.CodeFirstDemoForNewDB
 {
@@ -13,6 +9,9 @@ namespace Examples.EntityFramework.CodeFirstDemoForNewDB
         {
             using (var db = new BlogContext())
             {
+                // get the connectionstring to check where the db created while code first(SQLEXPRESS always takes precedence if it is installed)
+                //var connection = ((IObjectContextAdapter)db).ObjectContext.Connection.ConnectionString;
+
                 Console.WriteLine("please enter the blog name:");
                 var name = Console.ReadLine();
                 db.Blogs.Add(new Blog { Name = name });

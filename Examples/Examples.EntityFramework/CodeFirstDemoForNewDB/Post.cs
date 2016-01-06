@@ -7,6 +7,7 @@
         public string Content { get; set; }
 
         public int BlogID { get; set; }
-        public virtual Post Posts { get; set; }
+        public virtual Blog Blog { get; set; }
     }
+
 }

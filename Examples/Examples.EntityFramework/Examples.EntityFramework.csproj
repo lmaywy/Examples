@@ -53,11 +53,36 @@
     <Compile Include="CodeFirstDemoForNewDB\BlogContext.cs" />
     <Compile Include="CodeFirstDemoForNewDB\BloggingDemo.cs" />
     <Compile Include="CodeFirstDemoForNewDB\Post.cs" />
+    <Compile Include="CodeFirstDemoForNewDB\User.cs" />
+    <Compile Include="Migrations\201601050350065_InitialCreate.cs" />
+    <Compile Include="Migrations\201601050350065_InitialCreate.Designer.cs">
+      <DependentUpon>201601050350065_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201601050353359_AddUrl.cs" />
+    <Compile Include="Migrations\201601050353359_AddUrl.Designer.cs">
+      <DependentUpon>201601050353359_AddUrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201601050453041_AddUser.cs" />
+    <Compile Include="Migrations\201601050453041_AddUser.Designer.cs">
+      <DependentUpon>201601050453041_AddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201601050350065_InitialCreate.resx">
+      <DependentUpon>201601050350065_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201601050353359_AddUrl.resx">
+      <DependentUpon>201601050353359_AddUrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201601050453041_AddUser.resx">
+      <DependentUpon>201601050453041_AddUser.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

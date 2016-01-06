@@ -6,6 +6,7 @@ namespace Examples.EntityFramework.CodeFirstDemoForNewDB
     {
         public int ID { get; set; }
         public string Name { get; set; }
+        public string Url { get; set; }
         public virtual List<Post> Posts { get; set; }
     }
 }
