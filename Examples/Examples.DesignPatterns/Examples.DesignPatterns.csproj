@@ -72,6 +72,11 @@
     <Compile Include="Decorator\LogPriorityWarpper.cs" />
     <Compile Include="Decorator\LogWrapper.cs" />
     <Compile Include="Decorator\TextFileLog.cs" />
+    <Compile Include="Facade\Bank.cs" />
+    <Compile Include="Facade\Credit.cs" />
+    <Compile Include="Facade\Customer.cs" />
+    <Compile Include="Facade\FacadeDemo.cs" />
+    <Compile Include="Facade\Loan.cs" />
     <Compile Include="Factory\FactoryDemo.cs" />
     <Compile Include="Factory\DatabaseFactory.cs" />
     <Compile Include="Factory\DatabaseLog.cs" />
