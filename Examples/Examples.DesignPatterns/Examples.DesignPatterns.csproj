@@ -77,6 +77,7 @@
     <Compile Include="Facade\Customer.cs" />
     <Compile Include="Facade\FacadeDemo.cs" />
     <Compile Include="Facade\Loan.cs" />
+    <Compile Include="Facade\Mortgage.cs" />
     <Compile Include="Factory\FactoryDemo.cs" />
     <Compile Include="Factory\DatabaseFactory.cs" />
     <Compile Include="Factory\DatabaseLog.cs" />

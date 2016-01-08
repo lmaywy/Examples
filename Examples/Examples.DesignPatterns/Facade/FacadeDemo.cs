@@ -24,16 +24,30 @@ namespace Examples.DesignPatterns.Facade
             //to check if the customer able to loan
             var ret = bank.HasSufficientSavings(customer, 20000) && loan.HasNoBadLoans(customer) && credit.HasGoodCredit(customer);
 
-            Console.WriteLine("Customer {0} is asking loan at bank");
+            Console.WriteLine("Customer {0} is asking loan at bank", customer.Name);
+            Console.WriteLine("\n" + customer.Name + " has been " + (ret ? "Approved" : "Rejected"));
+            Console.ReadLine();
+        }
 
-            if (ret)
-            {
-                Console.WriteLine("he can loan");
-            }
-            else
-            {
-                Console.WriteLine("He can't loan because his conditions are not satisfied ");
-            }
+
+        /// <summary>
+        /// demo with facade pattern
+        /// create encapsulate class which contains the subsytem:Bank,Loan,Credit
+        /// for client: we can decoupleing the relationship for the subsystems , only focus on the customer and his behavior
+        /// </summary>
+        public static void DemoWithFacade()
+        {
+            //declare the customer
+            var customer = new Customer() { Name = "ZhangSan" };
+
+            //facade 
+            var mortgage = new Mortgage();
+
+            bool eligable = mortgage.IsEligible(customer, 125000);
+
+            Console.WriteLine("Customer {0} is asking loan at bank", customer.Name);
+            Console.WriteLine("\n" + customer.Name + " has been " + (eligable ? "Approved" : "Rejected"));
+            Console.ReadLine();
         }
     }
 }

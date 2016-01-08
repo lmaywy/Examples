@@ -10,6 +10,7 @@ using Examples.Algorithm.Sort;
 using Examples.DesignPatterns.AbstractFactory;
 using Examples.DesignPatterns.Bridge;
 using Examples.DesignPatterns.Builder;
+using Examples.DesignPatterns.Facade;
 using Examples.FrameworkClassLibrary.Reflection;
 using Examples.DesignPatterns.Prototype;
 using Examples.EntityFramework.CodeFirstDemoForNewDB;
@@ -35,6 +36,8 @@ namespace Examples.Demo
             BuilderDemo.Demo();
             PrototypeDemo.Demo();
             BridgeDemo.Demo();
+            FacadeDemo.DemoWithFacade();
+            FacadeDemo.DemoWithoutFacade();
             Console.WriteLine("------------------Desing Patterns Demo End-----------------");
             var result = Pailie("abcd");
 
