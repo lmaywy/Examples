@@ -7,6 +7,7 @@ using System.Linq;
 using Examples.Algorithm;
 using Examples.DesignPatterns.Factory;
 using Examples.Algorithm.Sort;
+using Examples.Algorithm.String;
 using Examples.DesignPatterns.AbstractFactory;
 using Examples.DesignPatterns.Bridge;
 using Examples.DesignPatterns.Builder;
@@ -46,7 +47,25 @@ namespace Examples.Demo
             BubbleSort.Sort(new int[] { 1, 3, 7, 9, 8, 4, 8, 5, 6 }, "asc");
             SelectSort.Sort(new int[] { 1, 3, 7, 9, 8, 4, 8, 5, 6 }, "desc");
             SelectSort.Sort(new int[] { 1, 3, 7, 9, 8, 4, 8, 5, 6 }, "asc");
-            Console.WriteLine("---------------------Algorithm Demo End--------------------");
+
+            //string related
+            var zero = StringAlgorithm.ToString(0);
+            Console.WriteLine("{0} to string {1}", 0, zero);
+            var negativeNumber = StringAlgorithm.ToString(-123456789);
+            Console.WriteLine("{0} to string {1}", -123456789, negativeNumber);
+            var postiveNumber = StringAlgorithm.ToString(123456789);
+            Console.WriteLine("{0} to string {1}", 123456789, postiveNumber);
+
+            var inverseText = StringAlgorithm.Inverse("abcdef");
+            Console.WriteLine("{0} after inverse become {1}", "abcdef", inverseText);
+
+            var charsDic = StringAlgorithm.GetCharsCount("This is a Test");
+            Console.WriteLine("This is a Test contains each character count as follows:");
+            foreach (var item in charsDic)
+            {
+                Console.WriteLine("key:{0},value:{1}", item.Key, item.Value);
+            }
+            //Console.WriteLine("---------------------Algorithm Demo End--------------------");
 
             Console.WriteLine("----------.Net Framework class library Demo start------------");
             TypeDemo.Demo();
