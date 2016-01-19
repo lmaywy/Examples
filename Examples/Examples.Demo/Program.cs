@@ -5,6 +5,7 @@ using Examples.DesignPatterns.Singleton;
 using System.Collections.Generic;
 using System.Linq;
 using Examples.Algorithm;
+using Examples.Algorithm.LinkedList;
 using Examples.DesignPatterns.Factory;
 using Examples.Algorithm.Sort;
 using Examples.Algorithm.String;
@@ -41,7 +42,7 @@ namespace Examples.Demo
             FacadeDemo.DemoWithoutFacade();
             Console.WriteLine("------------------Desing Patterns Demo End-----------------");
             var result = Pailie("abcd");
-
+          
             Console.WriteLine("--------------------Algorithm Demo Start-------------------");
             BubbleSort.Sort(new int[] { 1, 3, 7, 9, 8, 4, 8, 5, 6 }, "desc");
             BubbleSort.Sort(new int[] { 1, 3, 7, 9, 8, 4, 8, 5, 6 }, "asc");
@@ -65,6 +66,9 @@ namespace Examples.Demo
             {
                 Console.WriteLine("key:{0},value:{1}", item.Key, item.Value);
             }
+
+            //linkedList
+            var lstNoDuplicated = LinkedListDemo.RemoveDuplicated(new LinkedList<int>(new int[] { 1, 2, 3, 4, 5, 6, 5, 6, 7 }));
             //Console.WriteLine("---------------------Algorithm Demo End--------------------");
 
             Console.WriteLine("----------.Net Framework class library Demo start------------");
@@ -113,5 +117,8 @@ namespace Examples.Demo
             }
             return combination.Distinct().ToList();
         }
+
+       
     }
+
 }
