@@ -176,3 +176,7 @@ $RECYCLE.BIN/
 
 bin/
 obj/
+/Examples/.vs/config
+/Examples/packages
+/Examples/Examples.EntityFramework
+*.user
