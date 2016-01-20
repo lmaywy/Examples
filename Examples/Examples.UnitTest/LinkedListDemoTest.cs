@@ -20,11 +20,14 @@ namespace Examples.UnitTest
         {
             // arrange
             var lst = new LinkedList<int>(new int[] { 1, 2, 3, 4, 4 });
+
             // action
             var actual = LinkedListDemo.RemoveDuplicated(lst);
+
             // assert
             Assert.AreEqual(4, actual.Count);
             Assert.IsTrue(CompareTo(new LinkedList<int>(new int[] { 1, 2, 3, 4 }), actual));
+            Assert.IsTrue( actual.SequenceEqual(new LinkedList<int>(new int[] { 1, 2, 3, 4 })));
         }
 
         private bool CompareTo(LinkedList<int> source, LinkedList<int> target)
