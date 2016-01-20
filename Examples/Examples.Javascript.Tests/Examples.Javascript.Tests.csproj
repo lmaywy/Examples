@@ -56,6 +56,7 @@
     <Content Include="Scripts\qunit-1.14.0.js" />
     <Content Include="suites\HelloWordWidget.htm" />
     <Content Include="testscripts\HelloWorldWidget.test.js" />
+    <Content Include="testscripts\qunit.helper-doc.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
