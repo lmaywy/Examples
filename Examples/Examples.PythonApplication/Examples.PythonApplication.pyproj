@@ -22,6 +22,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="dicDemo.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Examples.PythonApplication.py" />
     <Compile Include="HelloWorld.py">
       <SubType>Code</SubType>
