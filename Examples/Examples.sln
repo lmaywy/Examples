@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples.MVC", "Examples.MV
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples.Javascript.Tests", "Examples.Javascript.Tests\Examples.Javascript.Tests.csproj", "{DBADF958-D2B5-49B2-B68B-90156D4E09B5}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Examples.PythonApplication", "Examples.PythonApplication\Examples.PythonApplication.pyproj", "{EEBEADE8-FC4D-4878-9878-054744769A6D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,8 @@ Global
 		{DBADF958-D2B5-49B2-B68B-90156D4E09B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBADF958-D2B5-49B2-B68B-90156D4E09B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBADF958-D2B5-49B2-B68B-90156D4E09B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEBEADE8-FC4D-4878-9878-054744769A6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEBEADE8-FC4D-4878-9878-054744769A6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
