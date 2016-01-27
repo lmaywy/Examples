@@ -48,3 +48,11 @@ print times;
 # 9.extend list with given list/tuple
 lst.extend([10,11])
 print lst;
+
+# 10. generate list using while,also call sum to calculate total value
+L = [];
+x=1;
+while x<=100:
+    L.append(x*x);
+    x=x+1;
+print sum(L)

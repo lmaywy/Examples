@@ -26,10 +26,16 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Examples.PythonApplication.py" />
+    <Compile Include="functionDemo.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="HelloWorld.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="listDemo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="setDemo.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
