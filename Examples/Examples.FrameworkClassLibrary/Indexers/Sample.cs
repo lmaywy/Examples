@@ -1,11 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Examples.FrameworkClassLibrary.Indexers
 {
     class Sample : ISample
     {
         private int[] arr = { 100, 200, 300, 400 };
-
+     
         public int this[int i]
         {
             get

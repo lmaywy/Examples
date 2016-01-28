@@ -50,11 +50,21 @@
     <Compile Include="AbstractFactory\ITax.cs" />
     <Compile Include="AbstractFactory\Salary.cs" />
     <Compile Include="AbstractFactory\SalaryFactory.cs" />
+    <Compile Include="Adapter\AdpaterDemo.cs" />
+    <Compile Include="Adapter\ILogTarget.cs" />
+    <Compile Include="Adapter\LogAdaptee.cs" />
+    <Compile Include="Adapter\LogAdpater.cs" />
     <Compile Include="Bridge\BridgeDemo.cs" />
     <Compile Include="Bridge\DatabaseLog.cs" />
     <Compile Include="Bridge\Log.cs" />
     <Compile Include="Bridge\LogImpl.cs" />
     <Compile Include="Bridge\TextLog.cs" />
+    <Compile Include="Builder\BuilderDemo.cs" />
+    <Compile Include="Builder\Food.cs" />
+    <Compile Include="Builder\FoodBuilder.cs" />
+    <Compile Include="Builder\FoodManager.cs" />
+    <Compile Include="Builder\GoldenBuilder.cs" />
+    <Compile Include="Builder\NormalBuilder.cs" />
     <Compile Include="Decorator\DatabaseLog.cs" />
     <Compile Include="Decorator\DecoratorDemo.cs" />
     <Compile Include="Decorator\ILog.cs" />
@@ -62,6 +72,12 @@
     <Compile Include="Decorator\LogPriorityWarpper.cs" />
     <Compile Include="Decorator\LogWrapper.cs" />
     <Compile Include="Decorator\TextFileLog.cs" />
+    <Compile Include="Facade\Bank.cs" />
+    <Compile Include="Facade\Credit.cs" />
+    <Compile Include="Facade\Customer.cs" />
+    <Compile Include="Facade\FacadeDemo.cs" />
+    <Compile Include="Facade\Loan.cs" />
+    <Compile Include="Facade\Mortgage.cs" />
     <Compile Include="Factory\FactoryDemo.cs" />
     <Compile Include="Factory\DatabaseFactory.cs" />
     <Compile Include="Factory\DatabaseLog.cs" />
@@ -88,6 +104,7 @@
   <ItemGroup>
     <Content Include="AbstractFactory\abstract factory stucture.jpg" />
     <Content Include="Bridge\Bridge-Pattern-Structure.jpg" />
+    <Content Include="Builder\Builder Pattern Structure.jpg" />
     <Content Include="Decorator\imgs\decorator pattern structure.gif" />
     <Content Include="Decorator\imgs\decorator demo structure.jpg" />
     <Content Include="Factory\factory structure.jpg" />

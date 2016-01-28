@@ -18,15 +18,16 @@ namespace Examples.FrameworkClassLibrary.Comparison
         {
             /*
             ==比较的是栈内的内容，对于值类型而言，”==“比较的就是两个对象的值，除字符串（字符串类型是一个特殊情况）以外的引用类型比较的就是两个引用类型在栈内的地址
-            Equals方法是定义在Object中的虚方法，用来比较两者引用对象的值是否相等，.NET中类型就都可以重写Equals方法，例如，在.NET中string类型就重写了Equals方法，用于比较两个字符串的值是否相等，而不是字符串引用是否相等。
+            Equals方法是定义在Object中的虚方法，用来比较两者引用对象的值是否相等，.NET中类型就都可以重写Equals方法，
+            例如，在.NET中string类型就重写了Equals方法，用于比较两个字符串的值是否相等，而不是字符串引用是否相等。
             */
             object obj1 = 1;
             object obj2 = 1;
             object obj3 = obj1;
             Console.WriteLine("object compare using equals:{0} and {1}", obj1.Equals(obj2), obj3.Equals(obj1)); // true and true
             Console.WriteLine("object compare using ==:{0} and {1}", obj1 == obj2, obj3 == obj1); // false and true
-            Console.WriteLine("object compare using ReferenceEquals:{0} and {1}", ReferenceEquals(obj3, obj1), ReferenceEquals(obj3, obj2)); // true and false
-
+            Console.WriteLine("object compare using ReferenceEquals:{0} and {1} and {2}", ReferenceEquals(obj1, obj2), ReferenceEquals(obj3, obj1), ReferenceEquals(obj3, obj2)); // false and true and false
+            
 
             //Equals and == : Determines whether this instance and another specified System.String object have the same value.
             //ReferenceEquals : Determines whether the specified System.Object instances are the same instance.
@@ -48,6 +49,28 @@ namespace Examples.FrameworkClassLibrary.Comparison
             Console.WriteLine("null compare using ==:{0}", null == null);
             Console.WriteLine("null compare using ReferenceEquals:{0}", ReferenceEquals(null, null));
             Console.ReadLine();
+
+            var check1 = new Checking
+            {
+                ID = 1,
+                Value = "check1"
+            };
+
+            var check2 = new Checking
+            {
+                ID = 1,
+                Value = "check1"
+            };
+
+            Console.WriteLine("complex object compare using equals:{0}", check1.Equals(check2));
+            Console.WriteLine("complex object compare using ==:{0}", check1 == check2);
+            Console.WriteLine("complex object compare using ReferenceEquals:{0}", ReferenceEquals(check1, check2));
         }
+    }
+
+    class Checking
+    {
+        public int ID { get; set; }
+        public string Value { get; set; }
     }
 }

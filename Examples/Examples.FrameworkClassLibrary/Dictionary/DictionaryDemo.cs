@@ -12,7 +12,13 @@ namespace Examples.FrameworkClassLibrary.Dictionary
         /// </summary>
         public static void Demo()
         {
-            var dic = new Dictionary<string, int>
+            /*
+                It returns error if we try to find a key which does not exist.
+                It is faster than a Hashtable because there is no boxing and unboxing.
+                Only public static members are thread safe.
+                Dictionary is a generic type which means we can use it with any data type.
+            */
+            var dic = new Dictionary<string, int> 
             {
                 {"A", 65},
                 {"B", 66},
@@ -78,6 +84,8 @@ namespace Examples.FrameworkClassLibrary.Dictionary
             {
                 Console.WriteLine("An element with Key = \"txt\" already exists.");
             }
+
+            //Console.WriteLine(openWith["test"]); throw key not found exception
         }
     }
 }

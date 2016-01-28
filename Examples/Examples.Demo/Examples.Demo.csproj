@@ -33,7 +33,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -48,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Examples.Algorithm\Examples.Algorithm.csproj">
@@ -57,6 +67,10 @@
     <ProjectReference Include="..\Examples.DesignPatterns\Examples.DesignPatterns.csproj">
       <Project>{0da06825-0df6-4910-a3a5-3ab6cd7afef0}</Project>
       <Name>Examples.DesignPatterns</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Examples.EntityFramework\Examples.EntityFramework.csproj">
+      <Project>{d1327aa8-80cb-4598-a7cb-5da5c05c73b4}</Project>
+      <Name>Examples.EntityFramework</Name>
     </ProjectReference>
     <ProjectReference Include="..\Examples.FrameworkClassLibrary\Examples.FrameworkClassLibrary.csproj">
       <Project>{8bdae4ac-1c84-433b-9765-89883c86bc73}</Project>
