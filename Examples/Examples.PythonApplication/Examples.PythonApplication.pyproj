@@ -32,10 +32,16 @@
     <Compile Include="HelloWorld.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="iteration.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="listDemo.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="setDemo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SliceListDemo.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
