@@ -138,3 +138,70 @@ Description: Test if a callback throws an exception, and optionally compare the 
 
 
 */
+
+/*
+2. test
+
+2.1 QUnit.test( name[,expected], callback )
+
+Description: Add a test to run.
+
+    QUnit.test( name, callback )
+        name
+        Type: String
+        Title of unit being tested
+        callback
+        Type: Function( Assert assert )
+        Function to close over assertions
+
+*This method used to have an optional second argument called expected. 
+This argument is deprecated and its usage will start throwing errors in 2.0.0. 
+If you're using it, use assert.expect() instead.
+
+2.2 QUnit.module( name [, hooks ] [, nested ] )
+
+Description: Group related tests under a single label.
+
+    QUnit.module( name [, hooks ] [, nested ] )
+        name
+        Type: String
+        Label for this group of tests
+        hooks
+        Type: PlainObject
+        Callbacks to run before and after each test
+            beforeEach
+            Type: Function()
+            Runs before each test
+            afterEach
+            Type: Function()
+            Runs after each test
+        nested
+        Type: Function( Object hooks )
+        A callback with grouped tests and nested modules to run under the current module label.
+
+* beforeEach and afterEach were previously named setup and teardown,
+which still exist and will be removed in QUnit 2.0.0. 
+
+2.3 QUnit.only( name, callback )
+
+Description: Adds a test to exclusively run, preventing all other tests from running.
+
+    QUnit.only( name, callback )
+        name
+        Type: String
+        Title of unit being tested
+        callback
+        Type: Function( Assert assert )
+        Function to close over assertions
+
+2.4 QUnit.skip( name )
+
+Description: Adds a test like object to be skipped
+
+    QUnit.skip( name )
+        name
+        Type: String
+        Title of unit being tested
+
+Use this method to replace QUnit.test() instead of commenting out entire tests.
+*/
