@@ -22,6 +22,8 @@ using Examples.FrameworkClassLibrary.DateTimeEg;
 using Examples.FrameworkClassLibrary.Dictionary;
 using Examples.FrameworkClassLibrary.Hashtable;
 using Examples.FrameworkClassLibrary.Struct;
+using System.Threading;
+using Examples.FrameworkClassLibrary.ExtensionMethods;
 
 namespace Examples.Demo
 {
@@ -79,10 +81,11 @@ namespace Examples.Demo
             HashtableDemo.Demo();
             DateTimeDemo.Demo();
             StructDemo.Demo();
+            ExtensionDemo.Demo();
             Console.WriteLine("----------.Net Framework class library Demo End--------------");
 
             Console.WriteLine("----------Entity Framework start------------");
-            BloggingDemo.Demo();
+            //BloggingDemo.Demo();
             Console.WriteLine("----------Entity Framework end------------");
 
             Console.Read();
@@ -118,7 +121,11 @@ namespace Examples.Demo
             return combination.Distinct().ToList();
         }
 
-       
+       public static void SetCulture()
+        {
+            Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("zh-cn");
+            Thread.CurrentThread.CurrentUICulture = Thread.CurrentThread.CurrentCulture;
+        }
     }
 
 }

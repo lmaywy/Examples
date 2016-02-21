@@ -43,6 +43,7 @@
     <Compile Include="Comparison\ComparisonDemo.cs" />
     <Compile Include="DateTimeEg\DateTimeDemo.cs" />
     <Compile Include="Dictionary\DictionaryDemo.cs" />
+    <Compile Include="ExtensionMethods\ExtensionDemo.cs" />
     <Compile Include="Hashtable\HashtableDemo.cs" />
     <Compile Include="Indexers\IndexersDemo.cs" />
     <Compile Include="Indexers\ISample.cs" />
