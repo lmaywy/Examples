@@ -24,6 +24,8 @@ using Examples.FrameworkClassLibrary.Hashtable;
 using Examples.FrameworkClassLibrary.Struct;
 using System.Threading;
 using Examples.FrameworkClassLibrary.ExtensionMethods;
+using Examples.FrameworkClassLibrary.Linq;
+using Examples.FrameworkClassLibrary.AnonymousMethods;
 
 namespace Examples.Demo
 {
@@ -82,6 +84,8 @@ namespace Examples.Demo
             DateTimeDemo.Demo();
             StructDemo.Demo();
             ExtensionDemo.Demo();
+            LinqDemo.Demo();
+            AnonymousMethodDemo.Demo();
             Console.WriteLine("----------.Net Framework class library Demo End--------------");
 
             Console.WriteLine("----------Entity Framework start------------");
