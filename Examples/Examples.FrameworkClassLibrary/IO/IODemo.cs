@@ -10,9 +10,10 @@ namespace Examples.FrameworkClassLibrary.IO
     public class IODemo
     {
         private const string path = @"c:\Codes OutPut";
-        private const string file = path+@"\test.txt";
+        private const string file = path + @"\test.txt";
         public static void Demo()
         {
+            #region Directory/File vs DirectoryInfo/FileInfo
             // Summary:Directory
             //     Exposes static methods for creating, moving, and enumerating through directories
             //     and subdirectories. This class cannot be inherited.
@@ -42,6 +43,28 @@ namespace Examples.FrameworkClassLibrary.IO
             {
                 Console.WriteLine("{0}-{1}-{2}", item.Name, item.Length, item.CreationTime);
             }
+            #endregion
+
+            #region Write File
+            using (StreamWriter w = new StreamWriter(file))
+            {
+                w.WriteLine("Hello, world");
+                w.WriteLine("Hello, IO");
+                w.Flush();
+                w.Close();
+            }
+            #endregion
+
+            #region Read File
+            using (StreamReader r = new StreamReader(file))
+            {
+                string input = string.Empty;
+                while ((input = r.ReadLine()) != null)
+                {
+                    Console.WriteLine(input);
+                }
+            }
+            #endregion
         }
     }
 }
