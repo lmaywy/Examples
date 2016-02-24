@@ -27,6 +27,7 @@ using Examples.FrameworkClassLibrary.ExtensionMethods;
 using Examples.FrameworkClassLibrary.Linq;
 using Examples.FrameworkClassLibrary.AnonymousMethods;
 using Examples.FrameworkClassLibrary.Convertions;
+using Examples.FrameworkClassLibrary.IO;
 
 namespace Examples.Demo
 {
@@ -88,6 +89,7 @@ namespace Examples.Demo
             LinqDemo.Demo();
             AnonymousMethodDemo.Demo();
             ConversionDemo.Demo();
+            IODemo.Demo();
             Console.WriteLine("----------.Net Framework class library Demo End--------------");
 
             Console.WriteLine("----------Entity Framework start------------");

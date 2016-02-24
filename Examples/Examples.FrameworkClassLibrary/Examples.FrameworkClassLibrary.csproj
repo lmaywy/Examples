@@ -51,6 +51,7 @@
     <Compile Include="Indexers\ISample.cs" />
     <Compile Include="Indexers\Sample.cs" />
     <Compile Include="Indexers\SampleCollection.cs" />
+    <Compile Include="IO\IODemo.cs" />
     <Compile Include="Linq\LinqDemo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reflection\Sample.cs" />
