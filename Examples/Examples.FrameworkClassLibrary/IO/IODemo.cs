@@ -54,8 +54,7 @@ namespace Examples.FrameworkClassLibrary.IO
                 w.Close();
             }
             #endregion
-
-            #region Read File
+            #region Read File (using StreamReader/BinaryReader)
             using (StreamReader r = new StreamReader(file))
             {
                 string input = string.Empty;
@@ -63,7 +62,19 @@ namespace Examples.FrameworkClassLibrary.IO
                 {
                     Console.WriteLine(input);
                 }
+                r.Close();
             }
+
+            var stream = new FileStream(file, FileMode.Open, FileAccess.Read);
+            var reader = new BinaryReader(stream);
+
+            for (int i = 0; i < 12; i++)
+            {
+                Console.Write(reader.ReadChar());
+            }
+            reader.Close();
+            stream.Close();
+
             #endregion
         }
     }
