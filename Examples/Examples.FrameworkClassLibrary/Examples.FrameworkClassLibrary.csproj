@@ -45,6 +45,7 @@
     <Compile Include="Conventions\ConversionDemo.cs" />
     <Compile Include="DateTimeEg\DateTimeDemo.cs" />
     <Compile Include="Dictionary\DictionaryDemo.cs" />
+    <Compile Include="Exceptions\ExceptionDemo.cs" />
     <Compile Include="ExtensionMethods\ExtensionDemo.cs" />
     <Compile Include="Hashtable\HashtableDemo.cs" />
     <Compile Include="Indexers\IndexersDemo.cs" />
@@ -59,9 +60,7 @@
     <Compile Include="Struct\Point.cs" />
     <Compile Include="Struct\StructDemo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Exceptions\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

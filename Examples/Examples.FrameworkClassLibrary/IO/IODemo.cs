@@ -73,6 +73,7 @@ namespace Examples.FrameworkClassLibrary.IO
                 Console.Write(reader.ReadChar());
             }
             reader.Close();
+
             stream.Close();
 
             #endregion
