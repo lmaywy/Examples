@@ -31,6 +31,7 @@ using Examples.FrameworkClassLibrary.IO;
 using Examples.FrameworkClassLibrary.Exceptions;
 using Examples.FrameworkClassLibrary.Delegate;
 using Examples.FrameworkClassLibrary.Event;
+using Examples.FrameworkClassLibrary.Generics;
 
 namespace Examples.Demo
 {
@@ -96,6 +97,7 @@ namespace Examples.Demo
             ExceptionDemo.Demo();
             DelegateDemo.Demo();
             EventDemo.Demo();
+            GenericsDemo.Demo();
             Console.WriteLine("----------.Net Framework class library Demo End--------------");
 
             Console.WriteLine("----------Entity Framework start------------");
