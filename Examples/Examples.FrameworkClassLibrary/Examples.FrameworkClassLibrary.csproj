@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AnonymousMethods\AnonymousMethodDemo.cs" />
+    <Compile Include="Attributes\AttributeDemo.cs" />
     <Compile Include="Comparison\ComparisonDemo.cs" />
     <Compile Include="Conventions\ConversionDemo.cs" />
     <Compile Include="DateTimeEg\DateTimeDemo.cs" />
