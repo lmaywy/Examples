@@ -44,6 +44,7 @@
     <Compile Include="Comparison\ComparisonDemo.cs" />
     <Compile Include="Conventions\ConversionDemo.cs" />
     <Compile Include="DateTimeEg\DateTimeDemo.cs" />
+    <Compile Include="Delegate\DelegateDemo.cs" />
     <Compile Include="Dictionary\DictionaryDemo.cs" />
     <Compile Include="Exceptions\ExceptionDemo.cs" />
     <Compile Include="ExtensionMethods\ExtensionDemo.cs" />
