@@ -46,6 +46,7 @@
     <Compile Include="DateTimeEg\DateTimeDemo.cs" />
     <Compile Include="Delegate\DelegateDemo.cs" />
     <Compile Include="Dictionary\DictionaryDemo.cs" />
+    <Compile Include="Event\EventDemo.cs" />
     <Compile Include="Exceptions\ExceptionDemo.cs" />
     <Compile Include="ExtensionMethods\ExtensionDemo.cs" />
     <Compile Include="Hashtable\HashtableDemo.cs" />

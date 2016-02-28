@@ -30,6 +30,7 @@ using Examples.FrameworkClassLibrary.Convertions;
 using Examples.FrameworkClassLibrary.IO;
 using Examples.FrameworkClassLibrary.Exceptions;
 using Examples.FrameworkClassLibrary.Delegate;
+using Examples.FrameworkClassLibrary.Event;
 
 namespace Examples.Demo
 {
@@ -94,6 +95,7 @@ namespace Examples.Demo
             IODemo.Demo();
             ExceptionDemo.Demo();
             DelegateDemo.Demo();
+            EventDemo.Demo();
             Console.WriteLine("----------.Net Framework class library Demo End--------------");
 
             Console.WriteLine("----------Entity Framework start------------");
