@@ -19,13 +19,12 @@ using Examples.EntityFramework.CodeFirstDemoForNewDB;
 using Examples.FrameworkClassLibrary.Indexers;
 using Examples.FrameworkClassLibrary.Comparison;
 using Examples.FrameworkClassLibrary.DateTimeEg;
-using Examples.FrameworkClassLibrary.Dictionary;
-using Examples.FrameworkClassLibrary.Hashtable;
 using Examples.FrameworkClassLibrary.Struct;
 using System.Threading;
 using Examples.FrameworkClassLibrary.ExtensionMethods;
 using Examples.FrameworkClassLibrary.Linq;
 using Examples.FrameworkClassLibrary.AnonymousMethods;
+using Examples.FrameworkClassLibrary.Collections;
 using Examples.FrameworkClassLibrary.Convertions;
 
 namespace Examples.Demo
@@ -47,13 +46,17 @@ namespace Examples.Demo
             FacadeDemo.DemoWithoutFacade();
             Console.WriteLine("------------------Desing Patterns Demo End-----------------");
             var result = Pailie("abcd");
-          
+
             Console.WriteLine("--------------------Algorithm Demo Start-------------------");
             BubbleSort.Sort(new int[] { 1, 3, 7, 9, 8, 4, 8, 5, 6 }, "desc");
             BubbleSort.Sort(new int[] { 1, 3, 7, 9, 8, 4, 8, 5, 6 }, "asc");
             SelectSort.Sort(new int[] { 1, 3, 7, 9, 8, 4, 8, 5, 6 }, "desc");
             SelectSort.Sort(new int[] { 1, 3, 7, 9, 8, 4, 8, 5, 6 }, "asc");
-
+            var arr = new int[] { 30, 40, 60, 10, 20, 50 };
+            QuickSort.Sort(arr, 0, arr.Length - 1);
+            BubbleSort.Sort(new int[] { 30, 40, 60, 10, 20, 50 });
+            SelectSort.Sort(new int[] { 30, 40, 60, 10, 20, 50 });
+            InsertSort.Sort(new int[] { 30, 40, 60, 10, 20, 50 }, arr.Length-1);
             //string related
             var zero = StringAlgorithm.ToString(0);
             Console.WriteLine("{0} to string {1}", 0, zero);
@@ -127,7 +130,7 @@ namespace Examples.Demo
             return combination.Distinct().ToList();
         }
 
-       public static void SetCulture()
+        public static void SetCulture()
         {
             Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("zh-cn");
             Thread.CurrentThread.CurrentUICulture = Thread.CurrentThread.CurrentCulture;

@@ -43,6 +43,8 @@
     <Compile Include="LinkedList\LinkedListDemo.cs" />
     <Compile Include="Sort\BubbleSort.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sort\InsertSort.cs" />
+    <Compile Include="Sort\QuickSort.cs" />
     <Compile Include="Sort\SelectSort.cs" />
     <Compile Include="String\StringAlgorithm.cs" />
   </ItemGroup>
