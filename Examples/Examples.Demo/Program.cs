@@ -26,6 +26,12 @@ using Examples.FrameworkClassLibrary.Linq;
 using Examples.FrameworkClassLibrary.AnonymousMethods;
 using Examples.FrameworkClassLibrary.Collections;
 using Examples.FrameworkClassLibrary.Convertions;
+using Examples.FrameworkClassLibrary.IO;
+using Examples.FrameworkClassLibrary.Exceptions;
+using Examples.FrameworkClassLibrary.Delegate;
+using Examples.FrameworkClassLibrary.Event;
+using Examples.FrameworkClassLibrary.Generics;
+using Examples.FrameworkClassLibrary.Attributes;
 
 namespace Examples.Demo
 {
@@ -91,6 +97,12 @@ namespace Examples.Demo
             LinqDemo.Demo();
             AnonymousMethodDemo.Demo();
             ConversionDemo.Demo();
+            IODemo.Demo();
+            ExceptionDemo.Demo();
+            DelegateDemo.Demo();
+            EventDemo.Demo();
+            GenericsDemo.Demo();
+            AttributeDemo.Demo();
             Console.WriteLine("----------.Net Framework class library Demo End--------------");
 
             Console.WriteLine("----------Entity Framework start------------");
