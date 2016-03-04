@@ -30,8 +30,7 @@ using Examples.FrameworkClassLibrary.Delegate;
 using Examples.FrameworkClassLibrary.Event;
 using Examples.FrameworkClassLibrary.Generics;
 using Examples.FrameworkClassLibrary.Attributes;
-using Examples.FrameworkClassLibrary.Dictionary;
-using Examples.FrameworkClassLibrary.Hashtable;
+using Examples.FrameworkClassLibrary.Collections;
 
 namespace Examples.Demo
 {
