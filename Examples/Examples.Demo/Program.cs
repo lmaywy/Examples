@@ -38,6 +38,7 @@ namespace Examples.Demo
     {
         static void Main(string[] args)
         {
+            QAs.Demo();
             Console.WriteLine("-----------------Desing Patterns Demo Start----------------");
             ObserverPatternDemo.Demo();
             SingletonPatternDemo.SimpleSingletonDemo();
@@ -61,7 +62,7 @@ namespace Examples.Demo
             QuickSort.Sort(arr, 0, arr.Length - 1);
             BubbleSort.Sort(new int[] { 30, 40, 60, 10, 20, 50 });
             SelectSort.Sort(new int[] { 30, 40, 60, 10, 20, 50 });
-            InsertSort.Sort(new int[] { 30, 40, 60, 10, 20, 50 }, arr.Length-1);
+            InsertSort.Sort(new int[] { 30, 40, 60, 10, 20, 50 }, arr.Length - 1);
             //string related
             var zero = StringAlgorithm.ToString(0);
             Console.WriteLine("{0} to string {1}", 0, zero);
