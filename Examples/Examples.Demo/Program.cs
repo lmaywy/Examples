@@ -15,7 +15,6 @@ using Examples.DesignPatterns.Builder;
 using Examples.DesignPatterns.Facade;
 using Examples.FrameworkClassLibrary.Reflection;
 using Examples.DesignPatterns.Prototype;
-using Examples.EntityFramework.CodeFirstDemoForNewDB;
 using Examples.FrameworkClassLibrary.Indexers;
 using Examples.FrameworkClassLibrary.Comparison;
 using Examples.FrameworkClassLibrary.DateTimeEg;
@@ -24,7 +23,6 @@ using System.Threading;
 using Examples.FrameworkClassLibrary.ExtensionMethods;
 using Examples.FrameworkClassLibrary.Linq;
 using Examples.FrameworkClassLibrary.AnonymousMethods;
-using Examples.FrameworkClassLibrary.Collections;
 using Examples.FrameworkClassLibrary.Convertions;
 using Examples.FrameworkClassLibrary.IO;
 using Examples.FrameworkClassLibrary.Exceptions;
@@ -32,6 +30,8 @@ using Examples.FrameworkClassLibrary.Delegate;
 using Examples.FrameworkClassLibrary.Event;
 using Examples.FrameworkClassLibrary.Generics;
 using Examples.FrameworkClassLibrary.Attributes;
+using Examples.FrameworkClassLibrary.Dictionary;
+using Examples.FrameworkClassLibrary.Hashtable;
 
 namespace Examples.Demo
 {
