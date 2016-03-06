@@ -42,16 +42,17 @@
   <ItemGroup>
     <Compile Include="AnonymousMethods\AnonymousMethodDemo.cs" />
     <Compile Include="Attributes\AttributeDemo.cs" />
+    <Compile Include="Collections\ArrayDemo.cs" />
     <Compile Include="Comparison\ComparisonDemo.cs" />
     <Compile Include="Conventions\ConversionDemo.cs" />
     <Compile Include="DateTimeEg\DateTimeDemo.cs" />
     <Compile Include="Delegate\DelegateDemo.cs" />
-    <Compile Include="Dictionary\DictionaryDemo.cs" />
+    <Compile Include="Collections\DictionaryDemo.cs" />
     <Compile Include="Event\EventDemo.cs" />
     <Compile Include="Exceptions\ExceptionDemo.cs" />
     <Compile Include="ExtensionMethods\ExtensionDemo.cs" />
     <Compile Include="Generics\GenericsDemo.cs" />
-    <Compile Include="Hashtable\HashtableDemo.cs" />
+    <Compile Include="Collections\HashtableDemo.cs" />
     <Compile Include="Indexers\IndexersDemo.cs" />
     <Compile Include="Indexers\ISample.cs" />
     <Compile Include="Indexers\Sample.cs" />

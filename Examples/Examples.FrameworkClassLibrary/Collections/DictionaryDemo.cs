@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Examples.FrameworkClassLibrary.Dictionary
+namespace Examples.FrameworkClassLibrary.Collections
 {
     public class DictionaryDemo
     {

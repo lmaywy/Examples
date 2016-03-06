@@ -2,7 +2,7 @@
 using System;
 using System.Collections;
 
-namespace Examples.FrameworkClassLibrary.Hashtable
+namespace Examples.FrameworkClassLibrary.Collections
 {
     /// <summary>
     /// Hashtable basic demos
