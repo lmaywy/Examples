@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data;
@@ -70,8 +71,32 @@ namespace Examples.Demo
             return noDuplicatedData;
         }
 
+        public static bool StringEqual(string source, string target)
+        {
+            if (source == null && target == null)
+            {
+                return true;
+            }
+            else if (source != null && target != null && source.Length != target.Length)
+            {
+                return false;
+            }
+            else
+            {
+                var arr1 = source.ToCharArray();
+                var arr2 = target.ToCharArray();
 
+                for (int i = 0; i < source.Length; i++)
+                {
+                    if (arr1[i] != arr2[i])
+                    {
+                        return false;
+                    }
+                }
 
+                return true;
+            }
+        }
     }
 
     class Person
