@@ -20,10 +20,16 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples.UnitTest", "Examples.UnitTest\Examples.UnitTest.csproj", "{ABB07507-368F-4DFA-9F77-89A9A53A0C76}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples.MVC", "Examples.MVC\Examples.MVC.csproj", "{B420DF1F-E950-4541-911C-A52BA34BDFBD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9E5D58A9-FFEA-498D-8A6E-47F1443DCFCE} = {9E5D58A9-FFEA-498D-8A6E-47F1443DCFCE}
+		{A85843EC-D58D-43BA-B863-6CB4830F6CA5} = {A85843EC-D58D-43BA-B863-6CB4830F6CA5}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples.Javascript.Tests", "Examples.Javascript.Tests\Examples.Javascript.Tests.csproj", "{DBADF958-D2B5-49B2-B68B-90156D4E09B5}"
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Examples.PythonApplication", "Examples.PythonApplication\Examples.PythonApplication.pyproj", "{EEBEADE8-FC4D-4878-9878-054744769A6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples.WebService", "Examples.WebService\Examples.WebService.csproj", "{A85843EC-D58D-43BA-B863-6CB4830F6CA5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,6 +79,10 @@ Global
 		{DBADF958-D2B5-49B2-B68B-90156D4E09B5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EEBEADE8-FC4D-4878-9878-054744769A6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EEBEADE8-FC4D-4878-9878-054744769A6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A85843EC-D58D-43BA-B863-6CB4830F6CA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A85843EC-D58D-43BA-B863-6CB4830F6CA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A85843EC-D58D-43BA-B863-6CB4830F6CA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A85843EC-D58D-43BA-B863-6CB4830F6CA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

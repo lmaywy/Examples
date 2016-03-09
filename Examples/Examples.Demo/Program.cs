@@ -31,6 +31,7 @@ using Examples.FrameworkClassLibrary.Event;
 using Examples.FrameworkClassLibrary.Generics;
 using Examples.FrameworkClassLibrary.Attributes;
 using Examples.FrameworkClassLibrary.Collections;
+using Examples.Algorithm.Trees;
 
 namespace Examples.Demo
 {
@@ -63,6 +64,8 @@ namespace Examples.Demo
             BubbleSort.Sort(new int[] { 30, 40, 60, 10, 20, 50 });
             SelectSort.Sort(new int[] { 30, 40, 60, 10, 20, 50 });
             InsertSort.Sort(new int[] { 30, 40, 60, 10, 20, 50 }, arr.Length - 1);
+
+            BinaryTreeDemo.TraversalDemo();
             //string related
             var zero = StringAlgorithm.ToString(0);
             Console.WriteLine("{0} to string {1}", 0, zero);
