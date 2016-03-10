@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Examples.Algorithm.String;
+using System.Collections.Generic;
 using System.Data;
 
 namespace Examples.Demo
@@ -16,13 +17,12 @@ namespace Examples.Demo
                 new Person() {Name = "Lisi", Age = 22}
             });
 
-            var isEqual0 = StringEqual("", "");
-            var isEqual1 = StringEqual(null, null);
-            var isEqual2 = StringEqual("", null);
-            var isEqual3 = StringEqual("1234", "1234");
-            var isEqual4 = StringEqual("123456", "123478");
-            var isEqual5 = StringEqual("12", "1234");
-
+            var isEqual0 = StringAlgorithm.StringEqual("", "");
+            var isEqual1 = StringAlgorithm.StringEqual(null, null);
+            var isEqual2 = StringAlgorithm.StringEqual("", null);
+            var isEqual3 = StringAlgorithm.StringEqual("1234", "1234");
+            var isEqual4 = StringAlgorithm.StringEqual("123456", "123478");
+            var isEqual5 = StringAlgorithm.StringEqual("12", "1234");
         }
 
         /// <summary>
@@ -72,36 +72,6 @@ namespace Examples.Demo
             return noDuplicatedData;
         }
 
-        public static bool StringEqual(string source, string target)
-        {
-            if (source == null && target == null)
-            {
-                return true;
-            }
-            else if ((source == null && target != null) || (target == null && source != null))
-            {
-                return false;
-            }
-            else if (source != null && target != null && source.Length != target.Length)
-            {
-                return false;
-            }
-            else
-            {
-                var arr1 = source.ToCharArray();
-                var arr2 = target.ToCharArray();
-
-                for (int i = 0; i < source.Length; i++)
-                {
-                    if (arr1[i] != arr2[i])
-                    {
-                        return false;
-                    }
-                }
-
-                return true;
-            }
-        }
     }
 
     class Person
