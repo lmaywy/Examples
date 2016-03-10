@@ -1,11 +1,5 @@
-﻿using System;
-using System.CodeDom;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Examples.Demo
 {
@@ -13,14 +7,21 @@ namespace Examples.Demo
     {
         public static void Demo()
         {
-            var a = QAs.DictinctOrders(new List<int>() { 1, 2, 3, 2, 4, 6 });
-            var students = QAs.DictinctOrders(new List<Person>()
+            var a = DictinctOrders(new List<int>() { 1, 2, 3, 2, 4, 6 });
+            var students = DictinctOrders(new List<Person>()
             {
                 new Person() {Name = "Zhangsan", Age = 12},
                 new Person() {Name = "Zhangsan", Age = 12},
                 new Person() {Name = "Lisi", Age = 22},
                 new Person() {Name = "Lisi", Age = 22}
             });
+
+            var isEqual0 = StringEqual("", "");
+            var isEqual1 = StringEqual(null, null);
+            var isEqual2 = StringEqual("", null);
+            var isEqual3 = StringEqual("1234", "1234");
+            var isEqual4 = StringEqual("123456", "123478");
+            var isEqual5 = StringEqual("12", "1234");
 
         }
 
@@ -76,6 +77,10 @@ namespace Examples.Demo
             if (source == null && target == null)
             {
                 return true;
+            }
+            else if ((source == null && target != null) || (target == null && source != null))
+            {
+                return false;
             }
             else if (source != null && target != null && source.Length != target.Length)
             {

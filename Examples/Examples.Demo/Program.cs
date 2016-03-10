@@ -86,6 +86,7 @@ namespace Examples.Demo
 
             //linkedList
             var lstNoDuplicated = LinkedListDemo.RemoveDuplicated(new LinkedList<int>(new int[] { 1, 2, 3, 4, 5, 6, 5, 6, 7 }));
+            MySingleLinkedListDemo.Demo();
             //Console.WriteLine("---------------------Algorithm Demo End--------------------");
 
             Console.WriteLine("----------.Net Framework class library Demo start------------");
