@@ -1,4 +1,5 @@
 ﻿using System;
+using Examples.FrameworkClassLibrary.XmlSerialize;
 using Examples.DesignPatterns.Decorator;
 using Examples.DesignPatterns.Obeserver;
 using Examples.DesignPatterns.Singleton;
@@ -39,6 +40,7 @@ namespace Examples.Demo
     {
         static void Main(string[] args)
         {
+            XmlPaser.Demo();
             QAs.Demo();
             Console.WriteLine("-----------------Desing Patterns Demo Start----------------");
             ObserverPatternDemo.Demo();

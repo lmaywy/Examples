@@ -38,6 +38,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Serialization" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AnonymousMethods\AnonymousMethodDemo.cs" />
@@ -64,6 +65,7 @@
     <Compile Include="Reflection\TypeDemo.cs" />
     <Compile Include="Struct\Point.cs" />
     <Compile Include="Struct\StructDemo.cs" />
+    <Compile Include="XmlSerialize\XmlPaser.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
