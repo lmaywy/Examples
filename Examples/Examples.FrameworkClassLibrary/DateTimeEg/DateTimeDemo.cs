@@ -8,8 +8,6 @@ namespace Examples.FrameworkClassLibrary.DateTimeEg
     {
         public static void Demo()
         {
-            DateTime c;
-
             // parse the given format datetime string to datetime type using CurrentCulture 
             var date = DateTime.ParseExact("05/12/2015", "MM/dd/yyyy", CultureInfo.CurrentCulture);
 

@@ -13,7 +13,7 @@ namespace Examples.FrameworkClassLibrary.Struct
 
         private const int z = 20;
 
-        public Color Color { get; set; }
+        public Color Color2 { get { return new Color { Name = "Red" }; } }
 
         //public int z = 10; 除非字段被声明为 const 或 static，否则无法初始化。
 
@@ -21,12 +21,11 @@ namespace Examples.FrameworkClassLibrary.Struct
         {
             x = p1;
             y = p2;
-            Color = new Color { Name = "Red" };
         }
 
         public void Draw()
         {
-            Console.WriteLine("x:{0},y:{1},the color of point:{2}", x, y, Color.Name);
+            Console.WriteLine("x:{0},y:{1},the color of point:{2}", x, y, Color2.Name);
         }
 
         //结构不能声明默认构造函数（没有参数的构造函数）或析构函数。

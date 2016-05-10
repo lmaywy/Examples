@@ -1,5 +1,4 @@
 ﻿using Examples.MVC.Calculator;
-using Examples.MVC.Search;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,8 +14,8 @@ namespace Examples.MVC.Controllers
             var wcfClient = new CalculatorServiceClient();
             var ret = wcfClient.Add(1, 2);
 
-            var soapClient = new SearchSoapClient();
-            var student = soapClient.Serach("zhang san");
+            //var soapClient = new SearchSoapClient();
+            //var student = soapClient.Serach("zhang san");
             return View();
         }
 
