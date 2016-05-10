@@ -180,3 +180,4 @@ obj/
 /Examples/packages
 /Examples/Examples.EntityFramework
 *.user
+/Examples/Examples.v12.suo
