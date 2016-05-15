@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples.DesignPatterns", "Examples.DesignPatterns\Examples.DesignPatterns.csproj", "{0DA06825-0DF6-4910-A3A5-3AB6CD7AFEF0}"
 EndProject
@@ -14,8 +14,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples.WcfService", "Examples.WcfService\Examples.WcfService.csproj", "{9E5D58A9-FFEA-498D-8A6E-47F1443DCFCE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples.EntityFramework", "Examples.EntityFramework\Examples.EntityFramework.csproj", "{D1327AA8-80CB-4598-A7CB-5DA5C05C73B4}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example.WebAutomationTests", "Example.WebAutomationTests\Example.WebAutomationTests.csproj", "{DBBDEC56-98CC-46E6-B019-4C86E26C70A7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples.UnitTest", "Examples.UnitTest\Examples.UnitTest.csproj", "{ABB07507-368F-4DFA-9F77-89A9A53A0C76}"
 EndProject
@@ -30,6 +28,8 @@ EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Examples.PythonApplication", "Examples.PythonApplication\Examples.PythonApplication.pyproj", "{EEBEADE8-FC4D-4878-9878-054744769A6D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples.WebService", "Examples.WebService\Examples.WebService.csproj", "{A85843EC-D58D-43BA-B863-6CB4830F6CA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples.Web.AcceptanceTests", "Examples.Web.AcceptanceTests\Examples.Web.AcceptanceTests.csproj", "{81656C9E-9C29-40F0-9F7E-B28517E1B653}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,10 +61,6 @@ Global
 		{D1327AA8-80CB-4598-A7CB-5DA5C05C73B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1327AA8-80CB-4598-A7CB-5DA5C05C73B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1327AA8-80CB-4598-A7CB-5DA5C05C73B4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DBBDEC56-98CC-46E6-B019-4C86E26C70A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DBBDEC56-98CC-46E6-B019-4C86E26C70A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DBBDEC56-98CC-46E6-B019-4C86E26C70A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DBBDEC56-98CC-46E6-B019-4C86E26C70A7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{ABB07507-368F-4DFA-9F77-89A9A53A0C76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{ABB07507-368F-4DFA-9F77-89A9A53A0C76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ABB07507-368F-4DFA-9F77-89A9A53A0C76}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -83,6 +79,10 @@ Global
 		{A85843EC-D58D-43BA-B863-6CB4830F6CA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A85843EC-D58D-43BA-B863-6CB4830F6CA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A85843EC-D58D-43BA-B863-6CB4830F6CA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81656C9E-9C29-40F0-9F7E-B28517E1B653}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81656C9E-9C29-40F0-9F7E-B28517E1B653}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81656C9E-9C29-40F0-9F7E-B28517E1B653}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81656C9E-9C29-40F0-9F7E-B28517E1B653}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
