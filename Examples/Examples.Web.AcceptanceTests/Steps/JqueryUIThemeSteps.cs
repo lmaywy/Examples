@@ -21,7 +21,7 @@ namespace Examples.Web.AcceptanceTests.Steps
         [Then(@"the page title should be ""(.*)""")]
         public void ThenThePageTitleShouldBe(string exectedTitle)
         {
-            Assert.AreEqual(exectedTitle, JqueryUIThemePage.Title.Text);
+            Assert.AreEqual(exectedTitle, JqueryUIThemePage.EntryTitle.Text);
         }
     }
 }

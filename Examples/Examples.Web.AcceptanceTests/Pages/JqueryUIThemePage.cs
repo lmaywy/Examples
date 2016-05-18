@@ -20,8 +20,10 @@ namespace Examples.Web.AcceptanceTests.Pages
         #region elements
 
         [FindsBy(How = How.CssSelector, Using = "#themeroller-content .entry-title")]
-        public IWebElement Title { get; set; }
+        public IWebElement EntryTitle { get; set; }
 
+        [FindsBy(How = How.Id, Using = "accordion")]
+        public IWebElement Accordion { get; set; }
         #endregion
     }
 }
