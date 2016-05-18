@@ -19,8 +19,8 @@ namespace Examples.Web.AcceptanceTests.Pages
 
         #region elements
 
-        [FindsBy(How = How.CssSelector, Using = "#themeroller-content .entry-title")]
-        public IWebElement Title { get; set; }
+        [FindsBy(How = How.CssSelector, Using = ".entry-title")]
+        public IWebElement TitleContent { get; set; }
 
         #endregion
     }
