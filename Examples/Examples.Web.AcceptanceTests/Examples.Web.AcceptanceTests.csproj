@@ -81,6 +81,8 @@
     <Compile Include="Support\WebDriverExtension.cs" />
     <Compile Include="Support\WebDriverFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Support\WebDriverUtils.cs" />
+    <Compile Include="Support\WebElementExtension.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">

@@ -1,10 +1,6 @@
 ﻿using Examples.Web.AcceptanceTests.Steps.Base;
+using Examples.Web.AcceptanceTests.Support;
 using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TechTalk.SpecFlow;
 
 namespace Examples.Web.AcceptanceTests.Steps
@@ -21,7 +17,7 @@ namespace Examples.Web.AcceptanceTests.Steps
         [Then(@"the page title should be ""(.*)""")]
         public void ThenThePageTitleShouldBe(string exectedTitle)
         {
-            Assert.AreEqual(exectedTitle, JqueryUIThemePage.EntryTitle.Text);
+            Assert.AreEqual(exectedTitle, JqueryUIThemePage.TitleContent.Text);
         }
     }
 }

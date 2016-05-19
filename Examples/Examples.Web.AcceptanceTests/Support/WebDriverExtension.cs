@@ -1,19 +1,20 @@
-﻿using Examples.Web.AcceptanceTests.Helpers;
+﻿using Examples.Web.AcceptanceTests.Constants;
+using Examples.Web.AcceptanceTests.Helpers;
+using Examples.Web.AcceptanceTests.Pages.Base;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Support.PageObjects;
+using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using System.Reflection;
 using System.Threading;
-using System.Threading.Tasks;
-using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
-using Examples.Web.AcceptanceTests.Constants;
 
 namespace Examples.Web.AcceptanceTests.Support
 {
     public static class WebDriverExtension
     {
+
         public static IWebElement FindElementsByJquery(this IWebDriver driver, string selector)
         {
             var js = (IJavaScriptExecutor)driver;
@@ -37,6 +38,7 @@ namespace Examples.Web.AcceptanceTests.Support
 
             return elements.FirstOrDefault() as IWebElement;
         }
+
 
         private static IEnumerable<object> FindElements(IWebDriver driver, string selector)
         {

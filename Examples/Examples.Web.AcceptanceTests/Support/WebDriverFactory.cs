@@ -16,19 +16,19 @@ namespace Examples.Web.AcceptanceTests.Support
     {
         public static RemoteWebDriver Create()
         {
-            var browser = ConfigHelper.DriverToUse;
+            var browser = ConfigHelper.DriverToUse.ToUpper();
             RemoteWebDriver driver = null;
-            var path = Environment.CurrentDirectory + @"\\Support";
+            var path = Environment.CurrentDirectory + @"\Support";
 
             switch (browser)
             {
-                case "FireFox":
+                case "FIREFOX":
                     driver = new FirefoxDriver();
                     break;
-                case "InternetExplorer":
+                case "INTERNETEXPLORER":
                     driver = new InternetExplorerDriver(path);
                     break;
-                case "Chrome":
+                case "CHROME":
                     driver = new ChromeDriver(path);
                     break;
                 default:
