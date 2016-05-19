@@ -1,13 +1,10 @@
 ﻿using Examples.Web.AcceptanceTests.Constants;
 using Examples.Web.AcceptanceTests.Helpers;
-using Examples.Web.AcceptanceTests.Pages.Base;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Support.PageObjects;
 using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
 using System.Threading;
 
 namespace Examples.Web.AcceptanceTests.Support

@@ -6,7 +6,7 @@ namespace Examples.Web.AcceptanceTests.Support
 {
     public static class WebElementExtension
     {
-        public static bool IsElementPresent(this IWebElement ele, IWebDriver driver)
+        public static bool IsPresent(this IWebElement ele, IWebDriver driver)
         {
             var isPresent = false;
             try

@@ -74,6 +74,8 @@
     <Compile Include="Helpers\AssertHelper.cs" />
     <Compile Include="Helpers\ConfigHelper.cs" />
     <Compile Include="Hooks\JqueryUIHooks.cs" />
+    <Compile Include="Pages\Base\BaseGird.cs" />
+    <Compile Include="Pages\Base\BaseModule.cs" />
     <Compile Include="Pages\Base\BasePage.cs" />
     <Compile Include="Pages\JqueryUIThemePage.cs" />
     <Compile Include="Steps\Base\StepBase.cs" />
@@ -103,6 +105,9 @@
     <Content Include="Support\IEDriverServer.exe">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pages\interfaces\" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
