@@ -19,5 +19,18 @@ namespace Examples.Web.AcceptanceTests.Steps
         {
             Assert.AreEqual(exectedTitle, JqueryUIThemePage.TitleContent.Text);
         }
+
+        [When(@"I input the text ""(.*)"" into autocomplete input")]
+        public void WhenIInputTheTextIntoAutocompleteInput(string text)
+        {
+            JqueryUIThemePage.EnterTextToAutoComplete(text);
+        }
+
+        [Then(@"I should see auto optional items in autocomplete tip panel contains text ""(.*)""")]
+        public void ThenIShouldSeeAutoOptionalItemsInAutocompleteTipPanel(string text)
+        {
+            Assert.IsTrue(JqueryUIThemePage.AutoCompleteTip.Displayed);
+            Assert.IsTrue(JqueryUIThemePage.AutoCompleteContains(text));
+        }
     }
 }

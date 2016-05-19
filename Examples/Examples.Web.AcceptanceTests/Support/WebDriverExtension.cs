@@ -14,7 +14,6 @@ namespace Examples.Web.AcceptanceTests.Support
 {
     public static class WebDriverExtension
     {
-
         public static IWebElement FindElementsByJquery(this IWebDriver driver, string selector)
         {
             var js = (IJavaScriptExecutor)driver;
@@ -38,7 +37,6 @@ namespace Examples.Web.AcceptanceTests.Support
 
             return elements.FirstOrDefault() as IWebElement;
         }
-
 
         private static IEnumerable<object> FindElements(IWebDriver driver, string selector)
         {

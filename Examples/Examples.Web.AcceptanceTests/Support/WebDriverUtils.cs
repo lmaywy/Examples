@@ -1,6 +1,7 @@
 ﻿using Examples.Web.AcceptanceTests.Helpers;
 using Examples.Web.AcceptanceTests.Pages.Base;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.PageObjects;
 using System;
 using System.Collections.Generic;
@@ -42,6 +43,10 @@ namespace Examples.Web.AcceptanceTests.Support
             return isExisted;
         }
 
-       
+        public static void MoveToElement(IWebElement ele,IWebDriver driver)
+        {
+            Actions action = new Actions(driver);
+            action.MoveToElement(ele);
+        }
     }
 }
